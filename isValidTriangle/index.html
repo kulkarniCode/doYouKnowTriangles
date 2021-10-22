@@ -8,7 +8,38 @@
     <script defer src="app.js"></script>
     <title>Is Valid Triangle?</title>
   </head>
+
   <body>
     <h1>Is Valid Triangle?</h1>
+    <div class="container">
+      <h2 class="info">
+        Enter three angles in the below input box to check if they form a valid
+        triangle.
+      </h2>
+      <div class="angle-input">
+        <form>
+          <input
+            type="number"
+            name="angle1"
+            id=" angleOne"
+            placeholder="First Angle"
+          />
+          <input
+            type="number"
+            name="angle2"
+            id=" angleTwo"
+            placeholder="Second Angle"
+          />
+          <input
+            type="number"
+            name="angle3"
+            id="angleThree"
+            placeholder="Third Angle"
+          />
+        </form>
+      </div>
+      <button id="check">Check</button>
+      <div class="output"></div>
+    </div>
   </body>
 </html>
