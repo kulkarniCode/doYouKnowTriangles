@@ -5,28 +5,3 @@
   padding: 0;
   font-family: "Lato", sans-serif;
 }
-
-.container {
-  margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  min-width: 80vw;
-  min-height: 80vh;
-}
-
-button {
-  padding: 1rem;
-  margin: 1rem;
-  font-size: medium;
-  font-weight: 500;
-}
-
-nav {
-  text-align: center;
-  font-size: larger;
-  font-weight: 700;
-  padding: 1.5rem;
-}
