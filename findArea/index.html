@@ -10,5 +10,33 @@
   </head>
   <body>
     <h1>Find Area</h1>
+    <h2 class="info">Enter height and base of a triangle to find the area.</h2>
+    <form method="POST">
+      <input
+        type="number"
+        class="height"
+        id="height"
+        name="height"
+        min="0.0001"
+        step="0.00001"
+        required=""
+        placeholder="Height"
+      /><input
+        type="number"
+        class="base"
+        id="base"
+        name="base"
+        min="0.0001"
+        step="0.00001"
+        required=""
+        placeholder="Base"
+      /><input
+        type="submit"
+        class="btn-find-area"
+        placeholder="Find Area"
+        value="Find Area"
+      />
+    </form>
+    <div class="output"></div>
   </body>
 </html>
