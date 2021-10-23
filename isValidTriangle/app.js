@@ -1,5 +1,5 @@
 const angleInput = document.querySelectorAll("input");
-const check = document.querySelector("#check");
+const check = document.querySelector(".check");
 const output = document.querySelector(".output");
 
 let allAngles = [];
@@ -9,10 +9,13 @@ check.addEventListener("click", (e) => {
   const angleA = Number(angleInput[0].value);
   const angleB = Number(angleInput[1].value);
   const angleC = Number(angleInput[2].value);
+  let sumOfAngles = angleA + angleB + angleC;
 
-  if (angleA + angleB + angleC === 180) {
-    output.innerHTML = "<h2>It is a VALID triangle.</h2>";
+  output.innerHTML = `<p>The sum of angles of this triangle is ${sumOfAngles}`;
+
+  if (sumOfAngles === 180) {
+    output.innerHTML += "<h3>It is a VALID triangle.</h3>";
   } else {
-    output.innerHTML = "<h2>It is a INVALID triangle.</h2>";
+    output.innerHTML += "<h3>It is an INVALID triangle.</h3>";
   }
 });

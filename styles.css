@@ -21,7 +21,8 @@ a {
   color: var(--primary-content);
 }
 
-button {
+button,
+input[type="submit"] {
   display: inline-block;
   max-width: 200px;
   font-weight: bold;
@@ -37,7 +38,8 @@ button {
   transition: transform 0.2s ease-in;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
   background-color: var(--primary-focus);
   transform: scale(0.9);
 }
