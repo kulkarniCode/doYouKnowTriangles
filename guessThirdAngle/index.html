@@ -10,5 +10,51 @@
   </head>
   <body>
     <h1>Guess Third Angle</h1>
+    <h2 class="info">
+      Guess the third angle in the input box below, to check if it forms a valid
+      triangle with the given two angles.
+    </h2>
+    <form method="POST">
+      <input
+        type="number"
+        class="angleOne"
+        id="angleOne"
+        name="angleOne"
+        min="0.0001"
+        step="0.00001"
+        max="180"
+        required=""
+        placeholder="First Angle"
+        readonly=""
+        value=""
+      /><input
+        type="number"
+        class="angleTwo"
+        id="angleTwo"
+        name="angleTwo"
+        min="0.0001"
+        step="0.00001"
+        max="180"
+        required=""
+        placeholder="Second Angle"
+        readonly=""
+        value=""
+      /><input type="submit" class="btn-generate" value="Generate Angles" />
+      <div class="third-angle-submit">
+        <input
+          type="number"
+          class="angleThreeGuess"
+          id="angleThreeGuess"
+          name="angleThreeGuess"
+          min="0.01"
+          step="0.01"
+          max="180"
+          required=""
+          placeholder="Guess Third Angle"
+          value=""
+        /><input type="submit" class="check" value="Check Guess" />
+      </div>
+    </form>
+    <div class="output"></div>
   </body>
 </html>
